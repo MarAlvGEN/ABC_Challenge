@@ -1,4 +1,7 @@
 const gallery = document.getElementById('gallery');
+const counter = document.getElementById('contador');
+
+let count = 0;
 
 gallery.addEventListener('click', (event) => {
   const card = event.target.closest('.card');
@@ -8,6 +11,13 @@ gallery.addEventListener('click', (event) => {
 });
 
 function voltear(card) {
-  const yaEstabaVolteada = card.classList.contains('volteada');
   card.classList.toggle('volteada');
+
+  const yaFueVista = card.classList.contains('vista');
+
+  if (!yaFueVista) {
+    card.classList.add('vista');
+    count++;
+    counter.textContent = count;
+  }
 }
