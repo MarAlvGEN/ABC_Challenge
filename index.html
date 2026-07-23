@@ -4,10 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-
-        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <title>ABC - Challenge</title>
     </head>
     <body>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                <span class="logo-text">ABCchallenge</span>
+            </div>
+
+            <div class="nav-filters">
+                <button class="btn-filter active">Mostrar todas</button>
+                <button class="btn-filter btn-secondary">
+                    Mostrar vocales
+                </button>
+            </div>
+
+            <!-- Derecha: Contador con estrella -->
+            <div class="nav-counter">
+                <i class="fa-solid fa-star star-icon"></i>
+                <span
+                    >Tarjetas volteadas:
+                    <strong id="contador">0</strong>/26</span
+                >
+            </div>
+        </nav>
+
         <article class="card" data-tipo="vocal" id="card-A">
             <div class="card-frente">
                 <h1>A</h1>

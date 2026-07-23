@@ -1,1 +1,86 @@
 /* ESTILO */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #f3f8f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e2ece7;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1e5d44;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.nav-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-filter {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Boton activo (vede oscuro) */
+.btn-filter.active,
+.btn-filter:first-child {
+    background-color: #1e5d44;
+    color: #ffffff;
+}
+
+/* Boton secundario (verde claro) */
+.btn-secondary {
+    background-color: #bbf3d6;
+    color: #1e5d44;
+}
+
+.btn-filter:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+/* contador */
+.nav-counter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #eaf6f0;
+    color: #1e5d44;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.star-icon {
+    color: #1e5d44;
+    font-size: 0.7rem;
+}
+
+#contador {
+    color: #1e5d44;
+    font-size: 1rem;
+}
