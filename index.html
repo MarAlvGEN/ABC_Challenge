@@ -1,63 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <title>ABC - Challenge</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <title>ABC - Challenge</title>
-</head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                <span class="logo-text">ABC - challenge</span>
+            </div>
 
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">
-      <i class="fa-solid fa-graduation-cap logo-icon"></i>
-      <span class="logo-text">ABCchallenge</span>
-    </div>
+            <div class="nav-filters">
+                <button class="btn-filter active">Mostrar todas</button>
+                <button class="btn-filter btn-secondary">
+                    Mostrar vocales
+                </button>
+            </div>
 
-    <div class="nav-filters">
-      <button class="btn-filter active">Mostrar todas</button>
-      <button class="btn-filter btn-secondary">
-        Mostrar vocales
-      </button>
-    </div>
+            <!-- Derecha: Contador con estrella -->
+            <div class="nav-counter">
+                <i class="fa-solid fa-star star-icon"></i>
+                <span
+                    >Tarjetas volteadas:
+                    <strong id="contador">0</strong>/26</span
+                >
+            </div>
+        </nav>
 
-    <!-- Derecha: Contador con estrella -->
-    <div class="nav-counter">
-      <i class="fa-solid fa-star star-icon"></i>
-      <span>Tarjetas volteadas:
-        <strong id="contador">0</strong>/26</span>
-    </div>
-  </nav>
+        <section id="gallery" class="gallery">
+            <article class="card" data-tipo="vocal">
+                <section class="card-inner">
+                    <div class="card-frente">
+                        <h1>A</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/A.png" alt="Aguacate" />
+                        <h2>Aguacate</h2>
+                    </section>
+                </section>
+            </article>
 
-  <section id="gallery" class="gallery">
-    <article class="card" data-tipo="vocal">
-      <section class="card-inner">
-        <div class="card-frente">
-          <h1>A</h1>
-        </div>
-        <section class="card-dorso">
-          <img src="img/A.webp" alt="Aguacate" />
-          <h2>Aguacate</h2>
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>B</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/B.png" alt="Banana" />
+                        <h2>Banana</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>C</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/C.png" alt="Carro" />
+                        <h2>Carro</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>D</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/D.png" alt="Dado" />
+                        <h2>Dado</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card" data-tipo="vocal">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>E</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/E.png" alt="Elefante" />
+                        <h2>Elefante</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>F</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/F.png" alt="Faro" />
+                        <h2>Faro</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>G</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/G.png" alt="Gato" />
+                        <h2>Gato</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>H</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/H.png" alt="Hormiga" />
+                        <h2>Hormiga</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card" data-tipo="vocal">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>I</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/I.png" alt="Iglesia" />
+                        <h2>Iglesia</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>J</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/J.png" alt="Jirafa" />
+                        <h2>Jirafa</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>K</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/K.png" alt="Kimono" />
+                        <h2>Kimono</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>L</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/L.png" alt="Loro" />
+                        <h2>Loro</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>M</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/M.png" alt="Mamá" />
+                        <h2>Mamá</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>N</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/N.png" alt="Naranja" />
+                        <h2>Naranja</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card" data-tipo="vocal">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>O</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/O.png" alt="Oso" />
+                        <h2>Oso</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>P</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/P.png" alt="Perro" />
+                        <h2>Perro</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>Q</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/Q.png" alt="Queso" />
+                        <h2>Queso</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>R</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/R.png" alt="Ratón" />
+                        <h2>Ratón</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>S</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/S.png" alt="Sapo" />
+                        <h2>Sapo</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>T</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/T.png" alt="Tomate" />
+                        <h2>Tomate</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card" data-tipo="vocal">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>U</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/U.png" alt="Uva" />
+                        <h2>Uva</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>V</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/V.png" alt="Vaca" />
+                        <h2>Vaca</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>W</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/W.png" alt="Waffles" />
+                        <h2>Waffles</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>X</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/X.png" alt="Xilofono" />
+                        <h2>Xilofono</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>Y</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/Y.png" alt="Yate" />
+                        <h2>Yate</h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>Z</h1>
+                    </div>
+                    <section class="card-dorso">
+                        <img src="img/Z.png" alt="Zorro" />
+                        <h2>Zorro</h2>
+                    </section>
+                </div>
+            </article>
         </section>
-      </section>
-    </article>
-
-    <article class="card" data-tipo="vocal">
-      <div class="card-inner">
-        <div class="card-frente">
-          <h1>B</h1>
-        </div>
-        <section class="card-dorso">
-          <img src="img/B.png" alt="Banana" />
-          <h2>Banana</h2>
-        </section>
-      </div>
-    </article>
-
-  </section>
-  <script src="script.js" defer></script>
-</body>
-
+        <script src="script.js" defer></script>
+    </body>
 </html>

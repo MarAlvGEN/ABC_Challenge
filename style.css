@@ -92,21 +92,22 @@ body {
 }
 
 img {
-  width: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 16px;
   padding: 16px;
+  margin: 0 24px;
 }
 
 .card {
   perspective: 1000px;
-  padding: 16px;
-  width: 120px;
-  height: 150px;
+  width: 90%;
+  height: 160px;
   border-radius: 8px;
   overflow: hidden;
   padding: 8px;
@@ -133,16 +134,26 @@ img {
   align-items: center;
   justify-content: center;
   backface-visibility: hidden;
-  border: 2px solid #98B29D;
-  border-bottom: 5px solid #98B29D;
+  border: 2px solid #98b29d;
+  border-bottom: 5px solid #98b29d;
   border-radius: 8px;
   color: #002114;
   font-weight: 600;
   padding: 16px;
+  background-color: #ffffff;
+  gap: 5px;
 }
 
 .card-dorso h2 {
   font-size: 18px;
+}
+
+.card-dorso img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
 .card-dorso {
