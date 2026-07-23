@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-        <title>ABC - Challenge</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-brand">
-                <i class="fa-solid fa-graduation-cap logo-icon"></i>
-                <span class="logo-text">ABCchallenge</span>
-            </div>
 
-            <div class="nav-filters">
-                <button class="btn-filter active">Mostrar todas</button>
-                <button class="btn-filter btn-secondary">
-                    Mostrar vocales
-                </button>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>ABC - Challenge</title>
+</head>
 
-            <!-- Derecha: Contador con estrella -->
-            <div class="nav-counter">
-                <i class="fa-solid fa-star star-icon"></i>
-                <span
-                    >Tarjetas volteadas:
-                    <strong id="contador">0</strong>/26</span
-                >
-            </div>
-        </nav>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-graduation-cap logo-icon"></i>
+      <span class="logo-text">ABCchallenge</span>
+    </div>
 
-        <article class="card" data-tipo="vocal" id="card-A">
-            <div class="card-frente">
-                <h1>A</h1>
-            </div>
-            <section class="card-dorso">
-                <img src="URL_de_internet" alt="Aguacate" />
-                <h2>Aguacate</h2>
-            </section>
-        </article>
-        <script src="js/script.js" defer></script>
-    </body>
+    <div class="nav-filters">
+      <button class="btn-filter active">Mostrar todas</button>
+      <button class="btn-filter btn-secondary">
+        Mostrar vocales
+      </button>
+    </div>
+
+    <!-- Derecha: Contador con estrella -->
+    <div class="nav-counter">
+      <i class="fa-solid fa-star star-icon"></i>
+      <span>Tarjetas volteadas:
+        <strong id="contador">0</strong>/26</span>
+    </div>
+  </nav>
+
+  <section id="gallery" class="gallery">
+    <article class="card" data-tipo="vocal">
+      <section class="card-inner">
+        <div class="card-frente">
+          <h1>A</h1>
+        </div>
+        <section class="card-dorso">
+          <img src="img/A.webp" alt="Aguacate" />
+          <h2>Aguacate</h2>
+        </section>
+      </section>
+    </article>
+
+    <article class="card" data-tipo="vocal">
+      <div class="card-inner">
+        <div class="card-frente">
+          <h1>B</h1>
+        </div>
+        <section class="card-dorso">
+          <img src="img/B.png" alt="Banana" />
+          <h2>Banana</h2>
+        </section>
+      </div>
+    </article>
+
+  </section>
+  <script src="script.js" defer></script>
+</body>
+
 </html>
