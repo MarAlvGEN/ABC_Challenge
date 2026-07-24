@@ -188,3 +188,14 @@ img {
   background-color: #2d6a4f;
   color: #ffffff;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  background-color: #ffffff;
+  border-top: 3px solid #e2ece7;
+  color: #1e5d44;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
