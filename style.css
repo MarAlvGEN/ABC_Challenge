@@ -11,6 +11,7 @@ body {
   background-color: #f3f8f5;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 .navbar {
@@ -37,6 +38,7 @@ body {
 .main-content {
   max-width: 90%;
   margin: auto;
+  min-height: calc(95vh - 95px);
   padding: 24px 16px;
 }
 
@@ -187,4 +189,22 @@ img {
 .btn-filter.active {
   background-color: #2d6a4f;
   color: #ffffff;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 3px solid #e2ece7;
+  color: #1e5d44;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-authors {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #2d6a4f;
 }
