@@ -15,17 +15,11 @@ btnTodas.addEventListener("click", mostrarTodas);
 btnVocales.addEventListener("click", mostrarVocales);
 
 function voltear(card) {
-  card.classList.toggle("volteada");
-
-  const yaFueVista = card.classList.contains("vista");
-
-  if (!yaFueVista) {
-    card.classList.add("vista");
-  }
+  const estaVolteada = card.classList.toggle("volteada");
+  card.classList.toggle("vista", estaVolteada);
 
   actualizarContador();
 }
-
 function actualizarContador() {
   const vistasVisibles = document.querySelectorAll(".card.vista:not(.oculta)");
   counter.textContent = vistasVisibles.length;
