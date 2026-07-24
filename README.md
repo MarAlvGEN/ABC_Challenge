@@ -9,7 +9,7 @@ Página web interactiva para enseñar el abecedario a niños, con cards animadas
 ## 📸 Demo
 
 
-https://github.com/user-attachments/assets/fa6cb01b-cc43-4f51-bca0-c5702c450f80
+https://github.com/user-attachments/assets/a038c4b5-61c9-4349-8dd4-aba34483be0a
 
 
 ---
