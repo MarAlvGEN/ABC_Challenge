@@ -1,23 +1,58 @@
-const gallery = document.getElementById('gallery');
-const counter = document.getElementById('contador');
+const gallery = document.getElementById("gallery");
+const counter = document.getElementById("contador");
+const btnTodas = document.getElementById("todas");
+const btnVocales = document.getElementById("vocales");
+const tarjetas = document.querySelectorAll(".card");
 
-let count = 0;
-
-gallery.addEventListener('click', (event) => {
-  const card = event.target.closest('.card');
+gallery.addEventListener("click", (event) => {
+  const card = event.target.closest(".card");
   if (!card) return;
 
   voltear(card);
 });
 
-function voltear(card) {
-  card.classList.toggle('volteada');
+btnTodas.addEventListener("click", mostrarTodas);
+btnVocales.addEventListener("click", mostrarVocales);
 
-  const yaFueVista = card.classList.contains('vista');
+function voltear(card) {
+  card.classList.toggle("volteada");
+
+  const yaFueVista = card.classList.contains("vista");
 
   if (!yaFueVista) {
-    card.classList.add('vista');
-    count++;
-    counter.textContent = count;
+    card.classList.add("vista");
   }
+
+  actualizarContador();
+}
+
+function actualizarContador() {
+  const vistasVisibles = document.querySelectorAll(".card.vista:not(.oculta)");
+  counter.textContent = vistasVisibles.length;
+}
+
+function mostrarTodas() {
+  btnTodas.classList.add("active");
+  btnVocales.classList.remove("active");
+
+  for (let i = 0; i < tarjetas.length; i++) {
+    tarjetas[i].classList.remove("oculta");
+  }
+  actualizarContador();
+}
+
+function mostrarVocales() {
+  btnVocales.classList.add("active");
+  btnTodas.classList.remove("active");
+
+  for (let i = 0; i < tarjetas.length; i++) {
+    const tarjeta = tarjetas[i];
+
+    if (tarjeta.dataset.tipo === "vocal") {
+      tarjeta.classList.remove("oculta");
+    } else {
+      tarjeta.classList.add("oculta");
+    }
+  }
+  actualizarContador();
 }

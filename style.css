@@ -1,4 +1,3 @@
-/* ESTILO */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
 
 * {
@@ -35,9 +34,16 @@ body {
   font-size: 0.95rem;
 }
 
-.nav-filters {
+.main-content {
+  max-width: 90%;
+  margin: auto;
+  padding: 24px 16px;
+}
+
+.filters {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 5px;
 }
 
 .btn-filter {
@@ -50,17 +56,20 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Boton activo (vede oscuro) */
-.btn-filter.active,
-.btn-filter:first-child {
-  background-color: #1e5d44;
-  color: #ffffff;
+.btn-filter {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #a8e6cf;
+  color: #1b4332;
 }
 
-/* Boton secundario (verde claro) */
-.btn-secondary {
-  background-color: #bbf3d6;
-  color: #1e5d44;
+.btn-filter.active {
+  background-color: #2d6a4f;
+  color: #ffffff;
 }
 
 .btn-filter:hover {
@@ -68,7 +77,6 @@ body {
   opacity: 0.7;
 }
 
-/* contador */
 .nav-counter {
   display: flex;
   align-items: center;
@@ -158,4 +166,25 @@ img {
 
 .card-dorso {
   transform: rotateY(180deg);
+}
+
+.card.oculta {
+  display: none;
+}
+
+.btn-filter {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  background-color: #a8e6cf;
+  color: #1b4332;
+}
+
+.btn-filter.active {
+  background-color: #2d6a4f;
+  color: #ffffff;
 }
